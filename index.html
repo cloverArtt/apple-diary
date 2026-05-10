@@ -231,14 +231,14 @@
   <div id="title-box"><span>🍎 今日苹果日记 🍏</span></div>
 
   <div id="scene-card">
-    <img id="bg" src="/imgs/bg.png" alt="bg"/>
+    <img id="bg" src="bg.png" alt="bg"/>
     <div id="apple-stage">
 
       <!-- 左：莹莹 -->
       <div class="char-wrap" id="ying-wrap">
         <div id="ying-bubble-wrap"></div>
         <div class="float-a">
-          <img id="ying-img" class="apple-img" src="/imgs/ying_happy.png" alt="莹莹" style="transform:scaleX(-1)"/>
+          <img id="ying-img" class="apple-img" src="ying_happy.png" alt="莹莹" style="transform:scaleX(-1)"/>
         </div>
         <div class="name-tag name-ying">🍏 莹莹</div>
       </div>
@@ -249,7 +249,7 @@
       <div class="char-wrap" id="xia-wrap">
         <div id="xia-bubble-wrap"></div>
         <div class="float-b">
-          <img id="xia-img" class="apple-img" src="/imgs/xia_happy.png" alt="夏以昼"/>
+          <img id="xia-img" class="apple-img" src="xia_happy.png" alt="夏以昼"/>
         </div>
         <div class="name-tag name-xia">🍎 夏以昼</div>
       </div>
@@ -304,9 +304,9 @@ async function generate() {
   // 换图片
   const yingImg = document.getElementById('ying-img');
   const xiaImg  = document.getElementById('xia-img');
-  yingImg.src = '/imgs/ying_' + inter.moodB + '.png';
+  yingImg.src = 'ying_' + inter.moodB + '.png';
   yingImg.style.transform = inter.moodB === 'surprised' ? 'none' : 'scaleX(-1)';
-  xiaImg.src  = '/imgs/xia_'  + inter.moodA + '.png';
+  xiaImg.src  = 'xia_'  + inter.moodA + '.png';
 
   // 换气泡
   const yingWrap = document.getElementById('ying-bubble-wrap');
